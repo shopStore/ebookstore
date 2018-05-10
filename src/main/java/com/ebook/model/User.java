@@ -9,7 +9,7 @@ public class User {
 
     private String email;
 
-    private String adress;
+    private String address;
 
     private String telephone;
 
@@ -49,12 +49,12 @@ public class User {
         this.email = email;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getTelephone() {

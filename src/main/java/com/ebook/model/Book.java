@@ -11,7 +11,7 @@ public class Book {
 
     private String imgPath;
 
-    private int secondClaasifyId;
+    private int secondClassifyId;
 
     public int getId() {
         return id;
@@ -53,11 +53,11 @@ public class Book {
         this.imgPath = imgPath;
     }
 
-    public int getSecondClaasifyId() {
-        return secondClaasifyId;
+    public int getSecondClassifyId() {
+        return secondClassifyId;
     }
 
-    public void setSecondClaasifyId(int secondClaasifyId) {
-        this.secondClaasifyId = secondClaasifyId;
+    public void setSecondClassifyId(int secondClassifyId) {
+        this.secondClassifyId = secondClassifyId;
     }
 }

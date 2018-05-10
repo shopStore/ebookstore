@@ -11,9 +11,9 @@ public class Order {
 
     private String status;
 
-    private String recevier;
+    private String receiver;
 
-    private String adress;
+    private String address;
 
     private String telephone;
 
@@ -51,20 +51,20 @@ public class Order {
         this.status = status;
     }
 
-    public String getRecevier() {
-        return recevier;
+    public String getReceiver() {
+        return receiver;
     }
 
-    public void setRecevier(String recevier) {
-        this.recevier = recevier;
+    public void setReceiver(String receiver) {
+        this.receiver = receiver;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getTelephone() {
