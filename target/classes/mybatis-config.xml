@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--引入外部配置文件-->
+    <properties resource="jdbc.properties"/>
+
+    <!--&lt;!&ndash;配置（还不太懂）&ndash;&gt;-->
+    <!--<settings>-->
+        <!--<setting name="cacheEnabled" value="true" />-->
+        <!--<setting name="lazyLoadingEnabled" value="true" />-->
+        <!--<setting name="aggressiveLazyLoading" value="true" />-->
+        <!--<setting name="multipleResultSetsEnabled" value="true" />-->
+        <!--<setting name="useColumnLabel" value="true" />-->
+        <!--<setting name="useGeneratedKeys" value="true" />-->
+        <!--<setting name="autoMappingBehavior" value="FULL" />-->
+        <!--<setting name="defaultExecutorType" value="SIMPLE" />-->
+        <!--<setting name="safeRowBoundsEnabled" value="false" />-->
+        <!--<setting name="mapUnderscoreToCamelCase" value="true" />-->
+        <!--<setting name="localCacheScope" value="SESSION" />-->
+        <!--<setting name="jdbcTypeForNull" value="NULL" />-->
+        <!--<setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString" />-->
+        <!--<setting name="logImpl" value="LOG4J2"/>-->
+    <!--</settings>-->
+
+    <!--设置类型别名-->
+    <typeAliases>
+        <typeAlias type="com.ebook.model.User" alias="User"/>
+        <typeAlias type="com.ebook.model.Order" alias="Order"/>
+        <typeAlias type="com.ebook.model.Cart" alias="Cart"/>
+        <typeAlias type="com.ebook.model.Book" alias="Book"/>
+        <typeAlias type="com.ebook.model.Admin" alias="Admin"/>
+        <typeAlias type="com.ebook.model.OrderItem" alias="OrderItem"/>
+    </typeAliases>
+
+    <!--配置pagehelper分页拦截器-->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageHelper">
+            <property name="reasonable" value="false"/>
+            <property name="helperDialect" value="mysql"/>
+            <property name="supportMethodsArguments" value="true"/>
+            <!--
+            <property name="params" value="count=count;pageSize=limit;pageNum=page"/>
+            -->
+        </plugin>
+    </plugins>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--映射配置-->
+    <mappers>
+        <package name="com.ebook.dao"/>
+    </mappers>
+
+</configuration>

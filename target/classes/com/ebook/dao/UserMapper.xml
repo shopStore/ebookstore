@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ebook.dao.UserMapper">
+    <resultMap id="BaseResultMap" type="com.ebook.model.User">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="real_name" jdbcType="VARCHAR" property="realName"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+        <result column="address" jdbcType="VARCHAR" property="address"/>
+        <result column="telephone" jdbcType="VARCHAR" property="telephone"/>
+        <result column="status" jdbcType="VARCHAR" property="status"/>
+        <result column="activation_code" jdbcType="VARCHAR" property="activationCode"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id,password,real_name,email,address,telephone,status,activation_code
+    </sql>
+    <select id="selectAll" resultType="com.ebook.model.User">
+        SELECT * FROM user
+    </select>
+</mapper>
