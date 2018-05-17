@@ -10,6 +10,14 @@ import java.io.IOException;
 @WebServlet(name = "LoginServlet")
 public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
+        response.setCharacterEncoding("utf-8");
+
+        String name = request.getParameter("name").trim();
+        String pwd = request.getParameter("pwd").trim();
+
+
+
 
     }
 
