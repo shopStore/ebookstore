@@ -4,7 +4,7 @@ import com.ebook.model.User;
 
 import java.util.List;
 
-public interface UserDao {
+public interface UserMapper {
     int deletByPrimaryKey(int id);
 
     int insert(User record);

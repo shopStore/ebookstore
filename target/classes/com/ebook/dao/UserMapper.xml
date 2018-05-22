@@ -14,7 +14,7 @@
     <sql id="Base_Column_List">
         id,password,real_name,email,address,telephone,status,activation_code
     </sql>
-    <select id="selectAll" resultType="com.ebook.model.User">
-        SELECT * FROM user
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT * FROM tb_user
     </select>
 </mapper>
