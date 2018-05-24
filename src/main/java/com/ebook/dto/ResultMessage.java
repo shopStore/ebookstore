@@ -1,17 +1,17 @@
 package com.ebook.dto;
 
-public class ResultMessage<T> {
+public class ResultMessage {
 
     private boolean success;
 
-    private T data;
+    private Object data;
 
     private String error;
 
     public ResultMessage(){
     }
 
-    public ResultMessage(boolean success, T data){
+    public ResultMessage(boolean success, Object data){
         this.success = success;
         this.data = data;
     }
@@ -29,11 +29,11 @@ public class ResultMessage<T> {
         this.success = success;
     }
 
-    public T getData(){
+    public Object getData(){
         return data;
     }
 
-    public void setData(T data){
+    public void setData(Object data){
         this.data = data;
     }
 

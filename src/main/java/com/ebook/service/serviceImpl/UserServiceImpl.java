@@ -16,12 +16,4 @@ public class UserServiceImpl implements UserService {
         List<User> users = USER_DAO.selectAll();
         return users;
     }
-
-    public static void main(String[] args) {
-        UserService userService = new UserServiceImpl();
-
-        List<User> users = userService.getAllUser();
-
-        System.out.println(users);
-    }
 }

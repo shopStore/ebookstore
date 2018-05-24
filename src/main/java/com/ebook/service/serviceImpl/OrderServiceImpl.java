@@ -1,6 +1,6 @@
 package com.ebook.service.serviceImpl;
 
-import com.ebook.dao.OrderDao;
+import com.ebook.dao.OrderMapper;
 import com.ebook.model.Order;
 import com.ebook.service.OrderService;
 import com.ebook.utils.DBUtil;
@@ -9,7 +9,7 @@ import java.util.List;
 
 public class OrderServiceImpl implements OrderService {
 
-    private static final OrderDao ORDER_DAO = (OrderDao) DBUtil.getMapperInstance(OrderDao.class);
+    private static final OrderMapper ORDER_DAO = (OrderMapper) DBUtil.getMapperInstance(OrderMapper.class);
 
     @Override
     public List<Order> getAllOrders() {

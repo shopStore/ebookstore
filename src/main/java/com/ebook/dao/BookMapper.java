@@ -4,7 +4,7 @@ import com.ebook.model.Book;
 
 import java.util.List;
 
-public interface BookDao {
+public interface BookMapper {
     int deletByPrimaryKey(int id);
 
     int insert(Book record);

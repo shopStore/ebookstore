@@ -4,7 +4,7 @@ import com.ebook.model.Cart;
 
 import java.util.List;
 
-public interface CartDao {
+public interface CartMapper {
     int deletByPrimaryKey(int id);
 
     int insert(Cart record);

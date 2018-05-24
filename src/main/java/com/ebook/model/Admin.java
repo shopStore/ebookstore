@@ -1,7 +1,7 @@
 package com.ebook.model;
 
 public class Admin {
-    private int id;
+    private String id;
 
     private String userName;
 
@@ -23,11 +23,11 @@ public class Admin {
         this.password = password;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 }

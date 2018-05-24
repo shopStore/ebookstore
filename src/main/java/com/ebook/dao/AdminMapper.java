@@ -4,7 +4,7 @@ import com.ebook.model.Admin;
 
 import java.util.List;
 
-public interface AdminDao {
+public interface AdminMapper {
     int deletByPrimaryKey(int id);
 
     int insert(Admin record);

@@ -4,7 +4,7 @@ import com.ebook.model.Order;
 
 import java.util.List;
 
-public interface OrderDao {
+public interface OrderMapper {
     int deletByPrimaryKey(int id);
 
     int insert(Order record);

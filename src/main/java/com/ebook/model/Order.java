@@ -3,9 +3,9 @@ package com.ebook.model;
 import java.util.Date;
 
 public class Order {
-    private int id;
+    private String id;
 
-    private double price;
+    private Double price;
 
     private Date createTime;
 
@@ -17,15 +17,7 @@ public class Order {
 
     private String telephone;
 
-    private int userId;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
+    private String userId;
 
     public double getPrice() {
         return price;
@@ -75,11 +67,19 @@ public class Order {
         this.telephone = telephone;
     }
 
-    public int getUserId() {
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 }

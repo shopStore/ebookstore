@@ -1,29 +1,15 @@
 package com.ebook.model;
 
 public class OrderItem {
-   private int bookId;
+    private String id;
 
-   private int orderId;
+   private String bookId;
 
-   private int count;
+   private String orderId;
 
-   private double total;
+   private Integer count;
 
-    public int getBookId() {
-        return bookId;
-    }
-
-    public void setBookId(int bookId) {
-        this.bookId = bookId;
-    }
-
-    public int getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(int orderId) {
-        this.orderId = orderId;
-    }
+   private Double total;
 
     public int getCount() {
         return count;
@@ -39,5 +25,29 @@ public class OrderItem {
 
     public void setTotal(double total) {
         this.total = total;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getBookId() {
+        return bookId;
+    }
+
+    public void setBookId(String bookId) {
+        this.bookId = bookId;
+    }
+
+    public String getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(String orderId) {
+        this.orderId = orderId;
     }
 }

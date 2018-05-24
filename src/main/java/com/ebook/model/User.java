@@ -1,7 +1,7 @@
 package com.ebook.model;
 
 public class User {
-    private int id;
+    private String id;
 
     private String password;
 
@@ -13,17 +13,9 @@ public class User {
 
     private String telephone;
 
-    private int status;
+    private Integer status;
 
     private String activationCode;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getPassword() {
         return password;
@@ -79,5 +71,13 @@ public class User {
 
     public void setActivationCode(String activationCode) {
         this.activationCode = activationCode;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }
